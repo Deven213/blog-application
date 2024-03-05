@@ -19,13 +19,18 @@ public class Post {
     private String content;
     private LocalDate createdOn;
 
+    
     public Post() {
+        this.createdOn = LocalDate.now();
     }
+
+    
 
     public Post(String title, String content, LocalDate createdOn) {
         this.title = title;
         this.content = content;
         this.createdOn = createdOn;
+        this.createdOn = LocalDate.now();
     }
 
     public Long getId() {
