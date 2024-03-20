@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./../styles/Blog.scss";
 import Popup from "../common/Popup";
-import useFetch from "../../hook/useFetch";
+
 import { baseurl } from "../../config";
+import useFetch from "../../hook.js/useFetch";
 
 const ViewBlog = () => {
   const { blogId } = useParams();

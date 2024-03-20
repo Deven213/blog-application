@@ -1,11 +1,10 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-
+import Home from "./components/pages/Home";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 import AddPost from "./components/pages/AddPost";
 import ViewBlog from "./components/pages/ViewBlog";
 import UpdatePost from "./components/pages/UpdatePost";
-import Home from "./components/Pages/Home";
 
 function App() {
   return (

@@ -2,8 +2,9 @@ import React from "react";
 import "../styles/Home.scss";
 
 import { useNavigate } from "react-router-dom";
-import useFetch from "../../hook/useFetch";
+
 import { baseurl } from "../../config";
+import useFetch from "../../hook.js/useFetch";
 
 const Home = () => {
   const { data: posts, loading, error } = useFetch(`${baseurl}/posts`);

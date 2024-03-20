@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import useFetch from "../../hook/useFetch";
+
 import { baseurl } from "../../config";
+import useFetch from "../../hook.js/useFetch";
 
 const AddPost = () => {
   const { postData } = useFetch(`${baseurl}/posts`);
